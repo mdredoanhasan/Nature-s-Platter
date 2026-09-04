@@ -19,47 +19,54 @@
 
   </head>
     <body>
-        <header ">
-            <nav class=" space-y-4 grid grid-cols-3 container mx-auto ">
-                <img src="/assets/nav-logo.png" class="w-32.5 mt-4" alt="" />
+        <header>
+            <nav class="space-y-4 grid grid-cols-2 md:grid-cols-3 items-center container mx-auto px-4">
+                <img src="/assets/nav-logo.png" class="w-24 sm:w-28 md:w-32.5 mt-4" alt="" />
 
-                <ul class="flex gap-4 items-center justify-center mt-4">
+                <ul class="hidden md:flex gap-4 items-center justify-center mt-4">
                 <li>Product</li>
                 <li>Services</li>
                 <li>Contact us</li>
                 </ul>
 
-                <div class="flex gap-4 items-center justify-center">
-                    <!-- search icon -->
+                <div class="flex flex-wrap gap-2 sm:gap-4 items-center justify-end md:justify-center mt-4">
+                <!-- search icon -->
                 <span><i class="fa-solid fa-magnifying-glass"></i></span>
                 <!-- cart icon -->
                 <span><i class="fa-solid fa-cart-shopping"></i></span>
                     <!-- login button -->
-                <button class="border rounded-[5px] w-22.5 h-9 border-green-600">Login</button>
+                <button class="border rounded-[5px] w-20 sm:w-22.5 h-9 border-green-600 text-sm sm:text-base">Login</button>
                 <!-- Register button  -->
-                <button class="bg-green-600 text-white rounded-[5px] w-22.5 h-9">Register</button>
+                <button class="bg-green-600 text-white rounded-[5px] w-20 sm:w-22.5 h-9 text-sm sm:text-base">Register</button>
                 </div>
+
+                <!-- mobile nav links -->
+                <ul class="flex md:hidden gap-4 items-center justify-start col-span-2 text-sm">
+                <li>Product</li>
+                <li>Services</li>
+                <li>Contact us</li>
+                </ul>
             </nav>
 
-            <section class=" text-center mt-6 bg-linear-to-b from-white to-[#EFEBE3]">
+            <section class="text-center mt-6 px-4 bg-linear-to-b from-white to-[#EFEBE3]">
 
-                <h2 class="font-bold text-4xl mb-5 ">Freshness <span class="text-green-600">You Can <br>Count</span> On, Prices You'll Love!</h2>
-                <p>Shop your daily essentials at unbeatale prices.From fresh produce to pantry <br>staples,we've got you covered every day! </p>
-                <img src="/assets/Hero Section 1.png" class="  container mx-auto w-187.5" alt="">
-                
+                <h2 class="font-bold text-2xl sm:text-3xl md:text-4xl mb-5 leading-tight">Freshness <span class="text-green-600">You Can <br class="hidden sm:block">Count</span> On, Prices You'll Love!</h2>
+                <p class="text-sm sm:text-base max-w-xl mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we've got you covered every day!</p>
+                <img src="/assets/Hero Section 1.png" class="container mx-auto w-full max-w-187.5" alt="">
+
             </section>
 
             <!-- Services Section  -->
 
-            <section class="mt-30">
-                <h3 class="container mx-auto font-bold text-green-600 text-3xl">Services</h3>
+            <section class="mt-16 md:mt-30 px-4">
+                <h3 class="container mx-auto font-bold text-green-600 text-2xl sm:text-3xl">Services</h3>
 
-                <div class="grid grid-cols-3 container mx-auto mt-9 gap-4 ">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 container mx-auto mt-9 gap-4">
                     <!-- First card -->
-                    <div class="bg-[#EFEBE3] rounded-[10px] p-5 text-center space-y-4 ">
+                    <div class="bg-[#EFEBE3] rounded-[10px] p-5 text-center space-y-4">
 
-                        <div class="bg-white rounded-full h-30 w-30 container mx-auto flex items-center justify-center p-17.5 ">
-                            <img src="assets/service.png" class=" container mx-auto w-25  " alt="">
+                        <div class="bg-white rounded-full h-30 w-30 container mx-auto flex items-center justify-center p-17.5">
+                            <img src="assets/service.png" class="container mx-auto w-25" alt="">
                         </div>
 
                         <h2 class="font-bold text-[20px]">24/7 Services </h2>
@@ -67,10 +74,10 @@
 
                     </div>
                     <!-- Second card -->
-                    <div class="bg-[#EFEBE3] rounded-[10px] p-5 text-center space-y-4 ">
+                    <div class="bg-[#EFEBE3] rounded-[10px] p-5 text-center space-y-4">
 
-                        <div class="bg-white rounded-full h-30 w-30 container mx-auto flex items-center justify-center p-17.5 ">
-                            <img src="assets/delivery.png" class=" container mx-auto w-25  " alt="">
+                        <div class="bg-white rounded-full h-30 w-30 container mx-auto flex items-center justify-center p-17.5">
+                            <img src="assets/delivery.png" class="container mx-auto w-25" alt="">
                         </div>
 
                         <h2 class="font-bold text-[20px]">Fast Delivery</h2>
@@ -78,10 +85,10 @@
 
                     </div>
                     <!-- Third card -->
-                    <div class="bg-[#EFEBE3] rounded-[10px] p-5 text-center space-y-4 ">
+                    <div class="bg-[#EFEBE3] rounded-[10px] p-5 text-center space-y-4">
 
-                        <div class="bg-white rounded-full h-30 w-30 container mx-auto flex items-center justify-center p-17.5 ">
-                            <img src="assets/products.png" class=" container mx-auto w-25  " alt="">
+                        <div class="bg-white rounded-full h-30 w-30 container mx-auto flex items-center justify-center p-17.5">
+                            <img src="assets/products.png" class="container mx-auto w-25" alt="">
                         </div>
 
                         <h2 class="font-bold text-[20px]">Healthy Products</h2>
@@ -95,98 +102,98 @@
 
             <!-- Popular Product Section  -->
 
-            <section class="mt-30 mb-30 pb-40 bg-[#EFEBE3]">
-                <h2 class="pt-30 pb-7 font-bold text-green-600 text-3xl container mx-auto">Popular Products</h2>
+            <section class="mt-16 md:mt-30 mb-16 md:mb-30 pb-16 md:pb-40 bg-[#EFEBE3]">
+                <h2 class="pt-16 md:pt-30 pb-7 font-bold text-green-600 text-2xl sm:text-3xl container mx-auto px-4">Popular Products</h2>
 
-                <div class="container mx-auto grid grid-cols-12 gap-4  ">
+                <div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4 px-4">
 
-                    <div class="col-span-4 h-120 rounded-[10px] p-4 bg-linear-to-br from-green-600 to-white ">
-                        <p class="font-bold text-white text-3xl p-4"> 30% off</p>
-                        <p class="p-4 text-[18px]">Discover a world of trests toys and essentails handpicked for </p>
+                    <div class="lg:col-span-4 h-auto lg:h-120 rounded-[10px] p-4 bg-linear-to-br from-green-600 to-white">
+                        <p class="font-bold text-white text-2xl sm:text-3xl p-4"> 30% off</p>
+                        <p class="p-4 text-[16px] sm:text-[18px]">Discover a world of trests toys and essentails handpicked for </p>
                         <button class="bg-white m-4 rounded-[5px] w-22.5 h-9">Buy Now</button>
-                        <img src="assets/popular.png" class="ml-[5em] -mt-32 w-100" alt="">
+                        <img src="assets/popular.png" class="mx-auto lg:ml-[5em] lg:-mt-32 w-full max-w-100" alt="">
                     </div>
 
-                    <div class=" col-span-8 grid grid-cols-3 gap-4 ">
+                    <div class="lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
 
                         <div class="flex bg-white p-4 rounded-[10px]">
-                            <img src="/assets/onion.png" class="mr-4" alt="">
+                            <img src="/assets/onion.png" class="mr-4 w-16 sm:w-auto" alt="">
                             <ul class="mt-2">
                                 <li><i class="fa-solid fa-star" style="color: rgb(194, 196, 47);"></i> 4.5</li>
-                                <li class="font-bold text-2xl mt-1">Onion 1kg</li>
-                                <li class="text-[20px] mt-1">$9.99</li>
+                                <li class="font-bold text-lg sm:text-2xl mt-1">Onion 1kg</li>
+                                <li class="text-base sm:text-[20px] mt-1">$9.99</li>
                             </ul>
                         </div>
 
                         <div class="flex bg-white p-4 rounded-[10px]">
-                            <img src="/assets/tomato.png" class="mr-4" alt="">
+                            <img src="/assets/tomato.png" class="mr-4 w-16 sm:w-auto" alt="">
                             <ul class="mt-2">
                                 <li><i class="fa-solid fa-star" style="color: rgb(194, 196, 47);"></i> 4.5</li>
-                                <li class="font-bold text-2xl mt-1">Tomato 500g</li>
-                                <li class="text-[20px] mt-1">$8.99</li>
+                                <li class="font-bold text-lg sm:text-2xl mt-1">Tomato 500g</li>
+                                <li class="text-base sm:text-[20px] mt-1">$8.99</li>
                             </ul>
                         </div>
 
                         <div class="flex bg-white p-4 rounded-[10px]">
-                            <img src="/assets/potato.png" class="mr-4" alt="">
+                            <img src="/assets/potato.png" class="mr-4 w-16 sm:w-auto" alt="">
                             <ul class="mt-2">
                                 <li><i class="fa-solid fa-star" style="color: rgb(194, 196, 47);"></i> 4.5</li>
-                                <li class="font-bold text-2xl mt-1">Potato 1kg</li>
-                                <li class="text-[20px] mt-1">$5.99</li>
+                                <li class="font-bold text-lg sm:text-2xl mt-1">Potato 1kg</li>
+                                <li class="text-base sm:text-[20px] mt-1">$5.99</li>
                             </ul>
                         </div>
 
                           <div class="flex bg-white p-4 rounded-[10px]">
-                            <img src="/assets/tomato.png" class="mr-4" alt="">
+                            <img src="/assets/tomato.png" class="mr-4 w-16 sm:w-auto" alt="">
                             <ul class="mt-2">
                                 <li><i class="fa-solid fa-star" style="color: rgb(194, 196, 47);"></i> 4.5</li>
-                                <li class="font-bold text-2xl mt-1">Tomato 500g</li>
-                                <li class="text-[20px] mt-1">$8.99</li>
+                                <li class="font-bold text-lg sm:text-2xl mt-1">Tomato 500g</li>
+                                <li class="text-base sm:text-[20px] mt-1">$8.99</li>
                             </ul>
                         </div>
 
                          <div class="flex bg-white p-4 rounded-[10px]">
-                            <img src="/assets/onion.png" class="mr-4" alt="">
+                            <img src="/assets/onion.png" class="mr-4 w-16 sm:w-auto" alt="">
                             <ul class="mt-2">
                                 <li><i class="fa-solid fa-star" style="color: rgb(194, 196, 47);"></i> 4.5</li>
-                                <li class="font-bold text-2xl mt-1">Onion 1kg</li>
-                                <li class="text-[20px] mt-1">$9.99</li>
+                                <li class="font-bold text-lg sm:text-2xl mt-1">Onion 1kg</li>
+                                <li class="text-base sm:text-[20px] mt-1">$9.99</li>
                             </ul>
                         </div>
 
                          <div class="flex bg-white p-4 rounded-[10px]">
-                            <img src="/assets/tomato.png" class="mr-4" alt="">
+                            <img src="/assets/tomato.png" class="mr-4 w-16 sm:w-auto" alt="">
                             <ul class="mt-2">
                                 <li><i class="fa-solid fa-star" style="color: rgb(194, 196, 47);"></i> 4.5</li>
-                                <li class="font-bold text-2xl mt-1">Tomato 500g</li>
-                                <li class="text-[20px] mt-1">$8.99</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="flex bg-white p-4 rounded-[10px]">
-                            <img src="/assets/onion.png" class="mr-4" alt="">
-                            <ul class="mt-2">
-                                <li><i class="fa-solid fa-star" style="color: rgb(194, 196, 47);"></i> 4.5</li>
-                                <li class="font-bold text-2xl mt-1">Onion 1kg</li>
-                                <li class="text-[20px] mt-1">$9.99</li>
+                                <li class="font-bold text-lg sm:text-2xl mt-1">Tomato 500g</li>
+                                <li class="text-base sm:text-[20px] mt-1">$8.99</li>
                             </ul>
                         </div>
 
                         <div class="flex bg-white p-4 rounded-[10px]">
-                            <img src="/assets/potato.png" class="mr-4" alt="">
+                            <img src="/assets/onion.png" class="mr-4 w-16 sm:w-auto" alt="">
                             <ul class="mt-2">
                                 <li><i class="fa-solid fa-star" style="color: rgb(194, 196, 47);"></i> 4.5</li>
-                                <li class="font-bold text-2xl mt-1">Potato 1kg</li>
-                                <li class="text-[20px] mt-1">$5.99</li>
+                                <li class="font-bold text-lg sm:text-2xl mt-1">Onion 1kg</li>
+                                <li class="text-base sm:text-[20px] mt-1">$9.99</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex bg-white p-4 rounded-[10px]">
+                            <img src="/assets/potato.png" class="mr-4 w-16 sm:w-auto" alt="">
+                            <ul class="mt-2">
+                                <li><i class="fa-solid fa-star" style="color: rgb(194, 196, 47);"></i> 4.5</li>
+                                <li class="font-bold text-lg sm:text-2xl mt-1">Potato 1kg</li>
+                                <li class="text-base sm:text-[20px] mt-1">$5.99</li>
                             </ul>
                         </div>
 
                          <div class="flex bg-white p-4 rounded-[10px]">
-                            <img src="/assets/potato.png" class="mr-4" alt="">
+                            <img src="/assets/potato.png" class="mr-4 w-16 sm:w-auto" alt="">
                             <ul class="mt-2">
                                 <li><i class="fa-solid fa-star" style="color: rgb(194, 196, 47);"></i> 4.5</li>
-                                <li class="font-bold text-2xl mt-1">Potato 1kg</li>
-                                <li class="text-[20px] mt-1">$5.99</li>
+                                <li class="font-bold text-lg sm:text-2xl mt-1">Potato 1kg</li>
+                                <li class="text-base sm:text-[20px] mt-1">$5.99</li>
                             </ul>
                         </div>
 
@@ -196,33 +203,33 @@
 
             <!-- Arrival & Offers Section  -->
 
-            <section class="mb-16 ">
-                <h2 class="container mx-auto font-bold text-3xl  text-green-500 mb-9">Arrival & Offers</h2>
+            <section class="mb-16 px-4">
+                <h2 class="container mx-auto font-bold text-2xl sm:text-3xl text-green-500 mb-9">Arrival & Offers</h2>
 
-                <div class="grid grid-cols-2 container mx-auto gap-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-5">
                     <!-- first offer  -->
-                <div class="grid grid-cols-2 bg-[#115414] rounded-[10px] p-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 bg-[#115414] rounded-[10px] p-6">
 
-                        <div class="ml-7 mt-7">
+                        <div class="sm:ml-7 mt-4 sm:mt-7">
                             <img src="assets/dawat-logo.png" alt="">
-                            <button class="bg-[#63B76D] h-15 w-70 mt-7 text-white text-2xl rounded-md">Cook Exotic Dishes</button>
-                            <p class="text-4xl text-white mt-7">UP to <span class="font-bold"> 20% OFF </span></p>
+                            <button class="bg-[#63B76D] h-15 w-full sm:w-70 mt-7 text-white text-xl sm:text-2xl rounded-md">Cook Exotic Dishes</button>
+                            <p class="text-3xl sm:text-4xl text-white mt-7">UP to <span class="font-bold"> 20% OFF </span></p>
                         </div>
                         <div>
-                            <img src="assets/offers-1.png" alt="">
+                            <img src="assets/offers-1.png" class="mx-auto" alt="">
                         </div>
 
                     </div>
                     <!-- Second offer  -->
-                   <div class="grid grid-cols-2 bg-[#102861] rounded-[10px] p-6">
-                        
-                        <div class="ml-7">
+                   <div class="grid grid-cols-1 sm:grid-cols-2 bg-[#102861] rounded-[10px] p-6">
+
+                        <div class="sm:ml-7">
                             <img src="assets/gate-logo.png" alt="">
-                            <button class=" bg-[#2A4D97] h-15 w-70 mt-7 text-white text-2xl rounded-md">World's No.1 Rice</button>
-                            <p class="text-4xl text-white mt-7">UP to <span class="font-bold"> 40% OFF </span></p>
+                            <button class="bg-[#2A4D97] h-15 w-full sm:w-70 mt-7 text-white text-xl sm:text-2xl rounded-md">World's No.1 Rice</button>
+                            <p class="text-3xl sm:text-4xl text-white mt-7">UP to <span class="font-bold"> 40% OFF </span></p>
                         </div>
                         <div>
-                            <img src="assets/offers-2.png" class="ml-32" alt="">
+                            <img src="assets/offers-2.png" class="mx-auto sm:ml-32" alt="">
                         </div>
 
                     </div>
@@ -231,26 +238,26 @@
 
             <!-- Get News Section  -->
 
-            <section class=" relative z-20 grid grid-cols-2 bg-[#EFEBE3] container mx-auto p-9 rounded-2xl">
+            <section class="relative z-20 grid grid-cols-1 md:grid-cols-2 bg-[#EFEBE3] container mx-auto p-6 sm:p-9 rounded-2xl mx-4 sm:mx-auto">
                 <div>
-                    <img src="assets/grocery-basket.png" alt="">
+                    <img src="assets/grocery-basket.png" class="mx-auto" alt="">
                 </div>
-                <div class="space-y-6 p-10">
-                    <h2 class="font-bold text-4xl ">Get Grocery News!</h2>
-                    <p class="text-2xl">Exclusive traning tips,ticks,product deals and more</p>
-                    <input type="email"placeholder="Enter email"class="bg-white px-3 py-2 rounded border border-gray-300 w-[400px]"/>
-                    <br><button class="bg-green-600 text-white rounded-[5px] w-26.5 h-9 ">Subscribe</button>
+                <div class="space-y-6 p-4 sm:p-10 text-center md:text-left">
+                    <h2 class="font-bold text-3xl sm:text-4xl">Get Grocery News!</h2>
+                    <p class="text-lg sm:text-2xl">Exclusive traning tips, ticks, product deals and more</p>
+                    <input type="email" placeholder="Enter email" class="bg-white px-3 py-2 rounded border border-gray-300 w-full max-w-[400px]"/>
+                    <br><button class="bg-green-600 text-white rounded-[5px] w-26.5 h-9 mt-4">Subscribe</button>
                 </div>
             </section>
         </header>
-        <footer class="bg-[#179800] h-125 -mt-40 mb-20 ">
-           <div class=" grid grid-cols-3 container mx-auto pt-80 gap-125 items-center ">
+        <footer class="bg-[#179800] h-auto lg:h-125 mt-0 lg:-mt-40 mb-20 py-16 lg:pt-80">
+           <div class="grid grid-cols-1 md:grid-cols-3 container mx-auto gap-10 md:gap-16 lg:gap-32 items-center px-4 text-center md:text-left">
                 <div>
-                    <img src="assets/footer-logo.png" alt="">
+                    <img src="assets/footer-logo.png" class="mx-auto md:mx-0" alt="">
                     <p class="text-white/70">Discover a world of treats,toys and essentials handpicked for your furry friends </p>
                 </div>
                 <div>
-                    <ul class="text-white space-y-3 ">
+                    <ul class="text-white space-y-3">
                         <li>Product</li>
                         <li>Services</li>
                         <li>Contact us</li>
@@ -258,7 +265,7 @@
                 </div>
                 <div>
                     <p class="text-white">Follow Us</p>
-                    <ul class="flex gap-2">
+                    <ul class="flex gap-2 justify-center md:justify-start">
                         <li><i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i></li>
                         <li><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></li>
                         <li><i class="fa-brands fa-square-linkedin" style="color: rgb(255, 255, 255);"></i></li>
